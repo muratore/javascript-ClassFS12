@@ -26,11 +26,20 @@ numbers.forEach(number => {
 
 console.log('************************************');
 
-// Challenge: Populate an array with a for
+// Challenge: Populate an array with a for loop
 const arrayNumbers = []
 
 for (let index = 0; index < 20; index+=2) {
     arrayNumbers.push(index)
     
 }
-console.log();
+console.log(arrayNumbers);
+
+console.log('************************************');
+
+// Challenge: sort an array of numbers
+
+const numbers3 = [23,54,2,4,6,24,68,21,34,37,89,09,33,23,12,4,56];
+
+const sortArray = numbers3.sort((a,b)=> a - b);
+console.log(sortArray);
