@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Prompt</h1>
+
+    <button onclick="turnTV()">Chamar função</button>
+    <script>
+        // const resposta = prompt('Qual é a sua idade!')
+
+        // if (resposta >= 18) {
+        //     alert(' Maior de idade')
+        // }
+        let turnTvState = true;
+
+        function turnTV() {
+        //    if(turnTvState){
+        //     console.log('A Tv está ligando...');
+        //     turnTvState=false;
+        //    }else{
+        //     console.log('A Tv está desligando...');
+        //     turnTvState=true;
+        //    }
+        turnTvState ? console.log('A Tv está Ligando...') : console.log('A Tv está desligando!') ;
+        turnTvState ? turnTvState = false : turnTvState = true;
+        }
+        
+        function verdadeOuMentira(boleano) {
+        boleano ? console.log(true) : console.log(false);
+            
+        }
+
+        verdadeOuMentira(0);
+        verdadeOuMentira('0');
+        verdadeOuMentira([])
+
+        function verificaTruthy(valor) {
+            return console.log(!!valor); ;
+        }
+
+        verificaTruthy(0);
+        verificaTruthy('0')
+        verificaTruthy([])
+
+        function perimetro(lado) {
+            return lado *4;
+
+        }
+
+        console.log(perimetro(16));
+
+        perimetro(16)
+
+    </script>
+</body>
+</html>
