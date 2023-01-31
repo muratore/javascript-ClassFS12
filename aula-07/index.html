@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Aula 7 Javascript e Dom</title>
+    </head>
+    <body>
+        <h1 onclick="colored()" id="title" >Bom dia</h1>
+        <p id="primeiro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, quo
+            sint tempore assumenda totam quia, minus tempora laborum provident
+            repudiandae esse dolor soluta, expedita sapiente facilis asperiores
+            incidunt. Quasi, possimus.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
+            itaque omnis neque ratione aspernatur voluptates odit, reprehenderit
+            sit explicabo, excepturi maxime corporis dicta recusandae nihil
+            possimus est, doloremque repudiandae provident?</p>
+            <div onclick="changeColor()"></div>
+
+    <script>
+        const title = document.querySelector('h1')
+        const title2 = document.getElementById('title')
+        const body = Array.from(document.querySelectorAll("p") )
+       title.innerHTML = 'Boa Noite!'
+       
+       function colored() {
+            title.classList.toggle('red')
+            
+        }
+        function changeColor(){
+            const div = document.querySelector('div')
+            div.classList.toggle('liga')
+        }
+    </script>
+    </body>
+</html>
